@@ -1,0 +1,252 @@
+/*
+Theme Name: Woodstock Child
+Theme URI: http://woodstock.temashdesign.com/
+Description: This is a child theme for Woodstock.
+Author: Temash Design
+Author URI: http: //www.temashdesign.com/
+Template: woodstock
+Version: 1.0
+*/
+
+@import url("../woodstock/style.css");
+
+/****************************************************************/
+/*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+/****************************************************************/
+
+.product_after_shop_loop_buttons, .woocommerce div.product form.cart, .woocommerce #content div.product form.cart, .woocommerce-page div.product form.cart, .woocommerce-page #content div.product form.cart{
+	display:block;
+}
+
+
+/* Estilos del home */
+
+nav#nav ul li > a {
+	font-weight: 300 !important;
+}
+
+
+.header-main-section .l-logo img {
+	height: 60px !important;
+	margin-top: 8px !important;
+}
+
+
+.ajax-search-input{
+	border-color: white !important;
+}
+
+.contact-info{
+	border-color: white !important;
+}
+
+.f-columns .textwidget {
+	opacity: 1;
+}
+
+.rowRedes {
+	flex-direction: row-reverse;
+}
+
+/*Estilos del filtro*/
+
+.widget-title {
+	text-transform: uppercase;
+}
+
+.woof_submit_search_form_container {
+	text-align: center;
+	margin: 9px 0 0px 0 !important;
+}
+
+.woof_submit_search_form_container button {
+	 float: unset !important;
+}
+.chosen-container {
+	width: 200px !important;
+}
+
+
+.woof_products_top_panel li {
+	background: #861c25;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#page-wrap a {
+    color: white; 
+    font-weight: 600;
+}
+
+.chosen-single {
+	background: #242424 !important;
+	color: white !important;
+}
+
+.chosen-drop{
+	background: #242424 !important;
+}
+
+span.select2-results{
+	background: #242424 !important;
+}
+
+div.woof_block_html_items{
+	background: #242424 !important;
+	color: white !important;
+	border-radius:15px !important;
+}
+
+li.select2-results__option{
+	color:white !important;
+}
+
+.widget-woof{
+	background: #F4F6FA;
+	border-radius: 36px;
+	padding: 0px !important;
+	border: 0px transparent !important;
+}
+
+.filter-tire .widget-woof{
+	width: 250px;
+	position: absolute;
+    top: -520px;
+    left: 10%;
+}
+
+.products-filter-view div.wpb_wrapper section.filter-tire .widget-woof{
+	position: relative !important;
+	width: 250px !important;
+	top:0px !important;
+	left:0px !important;
+}
+
+div.woof_container_inner  h4{
+	color: black;
+}
+
+button.button.woof_submit_search_form{
+	background-image: linear-gradient(#9F1925, #7F1D25) !important;
+    margin-left: 6% !important;
+    margin-right: 7% !important;
+    border-radius: 17px !important;
+	margin-top: 1px !important;
+    line-height: 1% !important;
+    height: 30px !important;
+	text-transform: lowercase;
+	font-weight: bold;
+	border-bottom: 3px lightgray solid !important;
+}
+
+button.button.woof_reset_search_form{
+	background-image: linear-gradient(#9F1925, #7F1D25) !important;
+    border-radius: 17px !important;
+    line-height: 1% !important;
+	text-transform: lowercase;
+    height: 30px !important;
+	font-weight: bold;
+	border-bottom: 3px lightgray solid !important;
+}
+
+button.button.woof_reset_search_form::first-letter,button.button.woof_submit_search_form::first-letter{
+	text-transform: uppercase;
+}
+
+div.woof.woof_sid.woof_sid_widget{
+	padding:12px !important;
+}
+
+div.widget.widget-woof h2.widget-title,div.widget.widget-woof h3.widget-title{
+	background-image: linear-gradient(#9F1925, #7F1D25);
+    border-radius: 20px 20px 20px 20px !important;
+	-moz-border-radius: 20px 20px 20px 20px !important;
+	-webkit-border-radius: 20px 20px 20px 20px !important;
+    margin-top: 0px !important;
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+    text-align: center !important;
+	line-height: 2 !important;
+    font-size: 20px !important;
+	border-bottom: 4px lightgray solid !important;
+}
+
+div.widget.widget-woof h2.widget-title::before,div.widget.widget-woof h3.widget-title::before{
+    content: "";
+	display:inline-block;
+    background: url("https://kenda.com.co/wp-content/uploads/2019/10/search-icon.png") no-repeat;
+    width: 26px;
+    height: 26px;
+	padding-right: 12% !important;
+}
+
+tr.woocommerce-product-attributes-item td.woocommerce-product-attributes-item__value p{
+	font-weight:700 !important;
+}
+
+#content > div > div.catalog_top > div.woof_products_top_panel > ul > li{
+	display:none !important;
+}
+
+
+
+span.count{
+	display: none !important;
+}
+
+.category_name span{
+	display: none !important;
+}
+
+ /*******Media Queries*********/
+
+@media (max-width: 425px) {
+	.filter-tire .widget-woof{
+		position: static;
+		width: 85%;
+    	margin: 0 auto;
+	}
+}
+
+/* Oculta el precio */
+.mc-dark .single-product .content-pos .single-product-infos .price .product_after_shop_loop  {
+	display:none !important;
+}
+
+.price {
+	display: none !important;
+}
+
+/*Oculta el dropdown de cantidad*/
+.quantity {
+	display:none !important;
+}
+
+/*Deshabilita el click en boton add to cart */
+
+.woocommerce div.product form.cart .single_add_to_cart_button, .woocommerce-page div.product form.cart .single_add_to_cart_button {
+	pointer-events: none;
+}
+
+/* Deshabilita el buscador woof en la pagina de categoria */
+
+.woof_sid_auto_shortcode {
+	display: none;
+}
+
+/* Estilos boton search */
+
+button {
+	background-color: #861C25 !important;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.comments-link {
+	display: none !important;
+}
+
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
